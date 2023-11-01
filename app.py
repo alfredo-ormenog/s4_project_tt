@@ -6,8 +6,7 @@ import streamlit as st
 # CREAR HISTOGRAMA Y GRÁFICO DE DISPERSIÓN:
 
 # Leer el dataset:
-df_veh = pd.read_csv(
-    "C:/Users/Alfredo OG/Documents/Myprojects/s4_project_tt/s4_project_tt/dataset_veh/vehicles_us.csv")
+df_veh = pd.read_csv("./dataset_veh/vehicles_us.csv")
 
 # Crear el título de la página y un subtítulo:
 st.header("¡Escoge el gráfico de tu preferencia!")
@@ -58,5 +57,3 @@ else:
 
 # SEGUNDA PARTE:
 # Tabla que muestre los vehículos por casa manufacturera:
-
-
