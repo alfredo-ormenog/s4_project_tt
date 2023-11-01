@@ -1,6 +1,6 @@
 # Importar las librerías necesarias:
 import pandas as pd
-import plotly.express as px
+import plotly as px
 import streamlit as st
 # PRIMERA PARTE:
 # CREAR HISTOGRAMA Y GRÁFICO DE DISPERSIÓN:
@@ -28,7 +28,7 @@ if opt_chart_names == "Histograma":
              """)
     app = st.checkbox("Mostrar gráfica")
     if app:
-        fig = px.histogram(df_veh, x="odometer")
+        fig = px.express.histogram(df_veh, x="odometer")
         st.plotly_chart(fig, use_container_width=True)
 else:
     st.subheader("Gráfico de Dispersión")
@@ -37,7 +37,7 @@ else:
               dos variables. Para la regresión, los gráficos de dispersión suelen incorporar una línea de ajuste. """)
     app_2 = st.checkbox("Mostrar gráfica")
     if app_2:
-        fig_2 = px.scatter(df_veh, x="odometer")
+        fig_2 = px.express.scatter(df_veh, x="odometer")
         st.plotly_chart(fig_2, use_container_width=True)
 
 
@@ -54,3 +54,9 @@ else:
 # if scat_button:
  #   fig_2 = px.scatter(df_veh, x="odometer")
   #  st.plotly_chart(fig_2, use_container_width=True)
+
+
+# SEGUNDA PARTE:
+# Tabla que muestre los vehículos por casa manufacturera:
+
+
