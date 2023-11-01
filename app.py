@@ -1,6 +1,6 @@
 # Importar las librerías necesarias:
 import pandas as pd
-import plotly_express as px
+import plotly.express as px
 import streamlit as st
 # PRIMERA PARTE:
 # CREAR HISTOGRAMA Y GRÁFICO DE DISPERSIÓN:
